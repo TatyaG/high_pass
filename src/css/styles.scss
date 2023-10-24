@@ -1,0 +1,128 @@
+@mixin title() {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+@mixin title-320() {
+    font-size: 18px;
+line-height: 23px;
+}
+
+@mixin grid() {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+
+@mixin link() {
+    display: block;
+    padding: 15px 22px;
+    max-width: max-content;
+    outline: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    border: 3px solid var(--orange);
+    color: var(--white);
+    background-color: var(--orange);
+    text-decoration: none;
+    transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
+}
+
+
+@mixin link-320() {
+    padding: 12px 22px;
+        font-size: 14px;
+line-height: 16px;
+}
+
+@mixin close() {
+    align-self: flex-end;
+    border: none;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/close.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.close-search,
+.close,
+.close-menu {
+    @include close();
+}
+
+
+
+.about__block {
+    @include grid();
+}
+
+
+.about__title,
+.projects__title,
+.contacts__title {
+    @include title();
+}
+
+
+.hero__link,
+.about__btn,
+.contacts__btn {
+    @include link();
+}
+
+.project__link {
+    @include link();
+    background-color: transparent;
+    border: 3px solid var(--orange);
+}
+
+@media (max-width: 1024px) {
+    .hero__link, .about__btn, .contacts__btn {
+        padding: 13px 19px;
+    }
+
+    .address-block .close {
+      align-self: start;
+  }
+}
+
+@media (max-width: 576px) {
+
+    .about__block {
+        grid-template-columns: 1fr;
+    }
+
+    .hero__link,
+.about__btn,
+.contacts__btn,
+.project__link {
+    @include link-320();
+}
+
+.about__title,
+.projects__title,
+.contacts__title {
+    @include title-320();
+}
+}
+
+@media (max-width: 320px) {
+    .hero__link, .about__btn, .contacts__btn, .project__link {
+        padding: 8px 19px;
+    }
+
+
+
+    .about__block {
+        gap: 22px;
+    }
+}
+

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>High pass</title>
+</head>
+<link rel="icon" href="img/favicon.svg">
+<link rel="stylesheet" href="main.css">
+
+<body>
+  <header class="header">
+
+    <div class="header__top">
+      <div class="container header__top__container">
+        <a href="#" class="header__logo">
+          <picture>
+            <source media="(max-width: 320px)" srcset="img/Logo-320.svg" type="image/jpg">
+            <source media="(max-width: 1200px)" srcset="img/Logo-1024.svg" type="image/jpg">
+            <img src="img/Logo.svg" alt="Логотип High pass">
+          </picture>
+        </a>
+        <nav class="header__nav nav">
+          <ul class="nav__list list-reset">
+            <li class="nav__item">
+              <a href="#about" class="nav__link">О студии</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Наши проекты</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Услуги</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Мастер-классы</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contacts" class="nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="search-block">
+          <input class="header__input" type="text" placeholder="Что будем искать?">
+          <button class="close-search"></button>
+        </div>
+
+        <button class="header__search btn"></button>
+      </div>
+
+    </div>
+
+    <div class="header__bottom">
+      <div class="container header__bottom__container">
+        <nav class="header__nav nav">
+          <ul class="nav__list list-reset">
+            <li class="nav__item">
+              <a href="#about" class="nav__link">О студии</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Наши проекты</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Услуги</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Мастер-классы</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contacts" class="nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="burger btn">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+
+      </div>
+      <div class="burger-menu">
+        <button class="close-menu"></button>
+        <nav class="header__nav nav">
+          <ul class="nav__list list-reset">
+            <li class="nav__item">
+              <a href="#about" class="nav__link">О студии</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Наши проекты</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Услуги</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Мастер-классы</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contacts" class="nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="telto:" class="contacts__tel">+7 495 424-23-532</a>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <h1 class="visually-hidden">Фотостудия High pass</h1>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__block">
+          <div class="hero__left">
+
+            <span class="hero__name">Мастер-класс от Игоря Робова</span>
+
+            <p class="hero__descr">Неоновый фотосет 2.0 7&nbsp;июля 20:00</p>
+            <a href="#" class="hero__link">Узнать больше</a>
+
+            <span class="hero__hashtag hashtag">#мастеркласс</span>
+          </div>
+
+          <p class="hero__text">Работы участников предыдущего мастер-класса</p>
+          <picture class="photo-1">
+            <source media="(max-width: 320px)" srcset="img/photo-1-320.jpg" type="image/jpg">
+            <source media="(max-width: 768px)" srcset="img/photo-1-768.jpg" type="image/jpg">
+            <source media="(max-width: 1024px)" srcset="img/photo-1-1024.jpg" type="image/jpg">
+            <img src="img/photo-1.jpg" alt="">
+          </picture>
+          <picture>
+            <source media="(max-width: 320px)" srcset="img/photo-2-320.jpg" type="image/jpg">
+            <source media="(max-width: 768px)" srcset="img/photo-2-768.jpg" type="image/jpg">
+            <source media="(max-width: 1024px)" srcset="img/photo-2-1024.jpg" type="image/jpg">
+            <img src="img/photo-2.jpg" alt="">
+          </picture>
+          <picture>
+            <source media="(max-width: 320px)" srcset="img/photo-3-320.jpg" type="image/jpg">
+            <source media="(max-width: 768px)" srcset="img/photo-3-768.jpg" type="image/jpg">
+            <source media="(max-width: 1024px)" srcset="img/photo-3-1024.jpg" type="image/jpg">
+            <img src="img/photo-3.jpg" alt="">
+          </picture>
+        </div>
+
+      </div>
+    </section>
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="about__title">О студии</h2>
+        <div class="about__block">
+          <p class="about__descr">В&nbsp;рамках спецификации современных стандартов, интерактивные прототипы,
+            инициированные исключительно синтетически, ограничены исключительно образом мышления.
+            Предварительные выводы неутешительны: высокотехнологичная концепция общественного уклада требует
+            от&nbsp;нас анализа соответствующих условий активизации! Следует отметить, что семантический
+            разбор внешних противодействий фиксирует необходимость распределения внутренних резервов
+            и&nbsp;ресурсов. Безусловно, граница обучения кадров предоставляет широкие возможности для
+            первоочередных требований. Повседневная практика показывает, что глубокий уровень погружения
+            предполагает независимые способы реализации новых принципов формирования материально-технической
+            и&nbsp;кадровой базы. Приятно, граждане, наблюдать, как явные признаки институционализации
+            являются только методом политического участия и&nbsp;нарушающими общечеловеческие нормы этики.
+          </p>
+          <div class="about__right">
+            <picture>
+              <source media="(max-width: 576px)" srcset="img/about-photo-320.jpg" type="image/jpg">
+              <source media="(max-width: 768px)" srcset="img/about-photo-768.jpg" type="image/jpg">
+              <source media="(max-width: 1200px)" srcset="img/about-photo-1024.jpg" type="image/jpg">
+              <img src="img/about-photo-1920.jpg" alt="">
+            </picture>
+
+            <p class="about__mailing">Подписаться на рассылку</p>
+            <form action="" class="about__form">
+              <label for="" class="about__label">
+                <input id="about-email" type="text" class="about__input" placeholder="Email">
+              </label>
+              <button type="submit" class="about__btn btn">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="projects__title">Наши проекты</h2>
+        <div class="projects__block">
+
+          <div class="project project-1">
+            <picture>
+              <source media="(max-width: 576px)" srcset="img/project-1-320.jpg" type="image/jpg">
+              <source media="(max-width: 768px)" srcset="img/project-1-768.jpg" type="image/jpg">
+              <source media="(max-width: 1024px)" srcset="img/project-1-1024.jpg" type="image/jpg">
+              <img src="img/project-1.jpg" alt="Проект 1">
+            </picture>
+
+            <p class="project__descr">Синтетически, смешаны с не уникальными данными до степени…</p>
+            <span class="project__date">16 июня</span>
+            <span class="project__hero__hashtag hashtag">#пейзаж</span>
+          </div>
+          <div class="project project-2">
+            <picture>
+              <source media="(max-width: 576px)" srcset="img/project-2-320.jpg" type="image/jpg">
+              <source media="(max-width: 768px)" srcset="img/project-2-768.jpg" type="image/jpg">
+              <source media="(max-width: 1024px)" srcset="img/project-2-1024.jpg" type="image/jpg">
+              <img src="img/project-2.jpg" alt="Проект 2">
+            </picture>
+
+            <p class="project__descr">В своём стремлении улучшить опыт мы упускаем, что явные...</p>
+            <span class="project__date">28 мая</span>
+            <span class="project__hero__hashtag hashtag">#пейзаж</span>
+          </div>
+          <div class="project project-3">
+            <picture>
+              <source media="(max-width: 576px)" srcset="img/project-3-320.jpg" type="image/jpg">
+              <source media="(max-width: 768px)" srcset="img/project-3-768.jpg" type="image/jpg">
+              <source media="(max-width: 1024px)" srcset="img/project-3-1024.jpg" type="image/jpg">
+              <img src="img/project-3.jpg" alt="Проект 3">
+            </picture>
+
+            <p class="project__descr">Равным образом, высокое качество позиционных высокотехнологичная концепция
+              общественного уклада</p>
+            <span class="project__date">14 мая</span>
+            <span class="project__hero__hashtag hashtag">#предмет</span>
+          </div>
+          <div class="project project-4">
+            <span class="project__date">20 марта</span>
+            <p class="project__name">Забвение</p>
+            <p class="project__descr">Играет важную роль в формировании глубокомысленных рассуждений</p>
+
+            <span class="project__hero__hashtag hashtag">#проектзабвение</span>
+            <a href="" class="project__link">О проекте</a>
+          </div>
+
+
+          <div class="project project-5">
+            <span class="project__date">9 апреля</span>
+            <p class="project__name">Cемантический разбор</p>
+            <p class="project__descr">В&nbsp;рамках спецификации современных стандартов, интерактивные
+              прототипы</p>
+
+            <span class="project__hero__hashtag hashtag">#fuji</span>
+            <a href="" class="project__link">О проекте</a>
+          </div>
+          <div class="project project-6">
+            <picture>
+              <source media="(max-width: 576px)" srcset="img/project-6-320.jpg" type="image/jpg">
+              <source media="(max-width: 768px)" srcset="img/project-6-768.jpg" type="image/jpg">
+              <source media="(max-width: 1024px)" srcset="img/project-6-1024.jpg" type="image/jpg">
+              <img src="img/project-6.jpg" alt="Проект 6">
+            </picture>
+
+            <p class="project__descr">Как принято считать, многие известные личности и по сей день
+              остаются уделом либералов…</p>
+            <span class="project__date">9 марта</span>
+            <span class="project__hero__hashtag hashtag">#ретушь</span>
+          </div>
+          <div class="project project-7">
+            <picture>
+              <source media="(max-width: 576px)" srcset="img/project-7-320.jpg" type="image/jpg">
+              <source media="(max-width: 768px)" srcset="img/project-7-768.jpg" type="image/jpg">
+              <source media="(max-width: 1024x)" srcset="img/project-7-1024.jpg" type="image/jpg">
+              <img src="img/project-7.jpg" alt="Проект 7">
+            </picture>
+
+            <p class="project__descr">С учётом сложившейся международной обстановки, новая модель
+              организационной…</p>
+            <span class="project__date">1 марта</span>
+            <span class="project__hero__hashtag hashtag">#портрет</span>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+    <section id="contacts" class="contacts">
+      <div class="container">
+        <h2 class="contacts__title">Контакты</h2>
+        <div class="contacts__block">
+          <div class="contacts__left">
+            <div class="address-block">
+              <button class="close btn"></button>
+              <div class="contacts__address">
+                <p class="contacts__name">Студия «High pass»</p>
+                <address class="contact">
+                  <p class="contacts__geo">107045, Москва, Даев переулок, дом 41, бизнес-центр «Даев Плаза»,
+                    этаж 8, офис № 82
+                    <a href="telto:" class="contacts__tel">+7 495 424-23-532</a>
+                  </p>
+
+                </address>
+
+              </div>
+            </div>
+
+            <div id="map" style="width: 100%; height: 460px"></div>
+          </div>
+          <div class="contacts__right">
+            <p class="contacts__app">Оставить заявку</p>
+            <p class="contacts__descr">Оставьте ваши данные, указав в графе «Комментарий» желаемые время
+              и дату съёмки или другого мероприятия</p>
+            <form action="" class="contacts__form">
+              <label class="contacts__label">
+                <input id="name" type="text" class="contacts__input" placeholder="Имя">
+              </label>
+              <label class="contacts__label">
+                <input id="email" type="text" class="contacts__input" placeholder="Email">
+              </label>
+              <textarea name="" id="" cols="30" rows="10" class="contacts__textarea"
+                placeholder="Комментарий"></textarea>
+              <button type="submit" class="contacts__btn btn">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="container footer__container">
+        <a href="#" class="footer__logo">
+          <picture>
+            <source media="(max-width: 320px)" srcset="img/Logo-320.svg" type="image/jpg">
+            <source media="(max-width: 1200px)" srcset="img/Logo-1024.svg" type="image/jpg">
+            <img src="img/Logo.svg" alt="Логотип High pass">
+          </picture>
+          <p class="footer__logo__text">Фотостудия High pass® 2018–2020</p>
+        </a>
+        <p class="footer__descr">Которая из&nbsp;моих фотографий самая любимая? Та, которую я&nbsp;собираюсь снять
+          завтра.
+          &copy;&nbsp;Имоджен Каннингем</p>
+        <div class="social">
+          <span class="social__text">Больше интересного:</span>
+          <ul class="social__list list-reset">
+            <li class="social__item">
+              <a href="" class="social__link">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.8527 9.99062C12.8527 11.2273 13.8552 12.2299 15.0919 12.2299C16.3286 12.2299 17.3311 11.2273 17.3311 9.99062C17.3311 8.75396 16.3286 7.7514 15.0919 7.7514C13.8552 7.7514 12.8527 8.75396 12.8527 9.99062Z" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71572 0 0 6.71573 0 15C0 23.2843 6.71572 30 15 30ZM9.67501 9.99055C9.67501 6.99892 12.1002 4.57364 15.0919 4.57364C18.0836 4.57364 20.5088 6.99892 20.5088 9.99055C20.5088 12.9822 18.0836 15.4077 15.0919 15.4077C12.1002 15.4077 9.67501 12.9822 9.67501 9.99055ZM20.5412 18.194C20.4724 18.2491 19.1729 19.2761 17.0043 19.7179L20.2777 22.9622C20.8534 23.5369 20.854 24.4695 20.2793 25.0451C19.7046 25.6207 18.7722 25.6216 18.1964 25.0467L15.0184 21.952L12.1319 25.0268C11.8429 25.3266 11.4575 25.4774 11.0716 25.4774C10.7035 25.4774 10.3351 25.3404 10.0493 25.0648C9.46372 24.5001 9.44677 23.5677 10.0114 22.9822L13.1185 19.735C10.8891 19.3036 9.53591 18.2499 9.46622 18.194C8.83165 17.6851 8.72971 16.7581 9.23862 16.1235C9.74746 15.4889 10.6744 15.387 11.3091 15.8958C11.3225 15.9067 12.7378 16.9699 15.0183 16.9715C17.2989 16.9699 18.6849 15.9067 18.6983 15.8958C19.333 15.387 20.2599 15.4889 20.7688 16.1235C21.2777 16.7581 21.1757 17.6851 20.5412 18.194Z" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15 0C6.71601 0 0 6.7157 0 15C0 23.2843 6.71601 30 15 30C23.284 30 30 23.2843 30 15C30 6.7157 23.284 0 15 0ZM22.6088 16.6223C23.3079 17.3052 24.0476 17.9478 24.6752 18.7013C24.9533 19.0346 25.2154 19.3792 25.4148 19.7669C25.6996 20.3196 25.4425 20.9257 24.9477 20.9586L21.8747 20.958C21.081 21.0236 20.4494 20.7035 19.9169 20.1609C19.4919 19.7285 19.0975 19.2666 18.6881 18.8194C18.5208 18.6359 18.3447 18.4631 18.1347 18.3272C17.7158 18.0546 17.3518 18.1381 17.1118 18.5758C16.8672 19.0211 16.8114 19.5146 16.788 20.0102C16.7546 20.7348 16.5361 20.9242 15.809 20.9583C14.2555 21.031 12.7814 20.7953 11.4114 20.0121C10.2028 19.3212 9.26732 18.3462 8.45218 17.2423C6.86486 15.0902 5.64921 12.7283 4.55693 10.2985C4.3111 9.7513 4.49095 9.45852 5.09463 9.44716C6.0976 9.42783 7.10056 9.43028 8.10353 9.44624C8.51172 9.45268 8.78179 9.68624 8.93862 10.0714C9.48062 11.4049 10.1451 12.6737 10.9777 13.8503C11.1996 14.1637 11.4261 14.4761 11.7486 14.6974C12.1047 14.9417 12.376 14.861 12.5438 14.4635C12.6513 14.2109 12.6976 13.9409 12.7209 13.6702C12.8007 12.743 12.8102 11.8162 12.6721 10.8927C12.5862 10.3148 12.2612 9.94158 11.6851 9.83233C11.3917 9.77678 11.4347 9.66813 11.5774 9.50056C11.8251 9.21084 12.0571 9.03161 12.5208 9.03161L15.9928 9.031C16.5401 9.13841 16.6628 9.38394 16.7371 9.93514L16.7402 13.7936C16.7337 14.0069 16.8473 14.6391 17.2303 14.7787C17.5372 14.88 17.7398 14.6339 17.9233 14.4396C18.7559 13.556 19.3492 12.5131 19.8804 11.4338C20.1149 10.9577 20.3171 10.4652 20.5136 9.97166C20.6596 9.60675 20.8868 9.42721 21.2986 9.43335L24.6421 9.43734C24.7406 9.43734 24.8406 9.43826 24.9382 9.45514C25.5017 9.55151 25.6561 9.79396 25.4817 10.3436C25.2074 11.2073 24.6743 11.9266 24.1532 12.6479C23.5946 13.4201 22.9989 14.1652 22.4458 14.9408C21.9376 15.6497 21.9778 16.0066 22.6088 16.6223Z"
+                    fill="#CACACA" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom__container">
+        <a href="#" class="footer__logo">
+          <picture>
+            <source media="(max-width: 320px)" srcset="img/Logo-320.svg" type="image/jpg">
+            <source media="(max-width: 1200px)" srcset="img/Logo-1024.svg" type="image/jpg">
+            <img src="img/Logo.svg" alt="Логотип High pass">
+          </picture>
+          <p class="footer__logo__text">Фотостудия High pass® 2018–2020</p>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
